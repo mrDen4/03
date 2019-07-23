@@ -1,0 +1,57 @@
+.callback {
+    background: $blue;
+    color: #ffffff;
+    padding: 30px 0;
+
+    .callback__title {
+        font-size: 36px;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 0;
+    }
+
+    .callback__subtitle {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .callback__form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        .form__block {
+            width: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 1px solid #ffffff;
+
+            .form__inp {
+                background: none;
+                border: none;
+                width: 90%;
+                font-size: 14px;
+                outline: none;
+
+                &::-webkit-input-placeholder {
+                    color: #ffffff;
+                }
+            }
+        }
+
+        .form__block-btn {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .form__btn {
+            border: 1px solid #ffffff;
+            background: none;
+            margin-top: 30px;
+        }
+    }
+}

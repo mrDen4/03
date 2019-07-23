@@ -15,7 +15,6 @@ body {
   font-size: 12px;
   font-family: 'Roboto', sans-serif;
   line-height: 1.42;
-  color: $black;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
@@ -37,4 +36,27 @@ ul {
 margin: 0;
 padding: 0;
 list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  height: 55px;
+  width: 210px;
+  border: 1px solid $red;
+  background: $red;
+  color: #ffffff;
+  text-transform: uppercase;
+  transition: .3s;
+  cursor: pointer;
+
+  &:hover {
+    opacity: .7;
+  }
 }

@@ -1,0 +1,50 @@
+.hero {
+    height: 90vh;
+    background: url('../images/hero_bg.png') right center no-repeat;
+    background-size: contain;
+
+    .hero__container {
+        justify-content: center;
+        height: 100%;
+    }
+    .hero__text {
+        width: 45%;
+
+        .text__text {
+            text-transform: uppercase;
+            color: $red;
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .text__title {
+            font-size: 48px;
+            line-height: 59px;
+            text-transform: uppercase;
+            margin: 16px 0 25px 0;
+        }
+
+        .text__price {
+            color: $red;
+            font-size: 30px;
+            text-transform: uppercase;
+            margin: 0 0 30px 0;
+        }
+
+        .text__btns {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .btns__link {
+                background: none;
+                color: $red;
+
+                .btn__img {
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+}
