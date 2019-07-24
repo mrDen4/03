@@ -1,0 +1,63 @@
+.service-price {
+    padding: 30px 0;
+    background: #F8F8F8;
+
+    .service-price__container {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .service-price__title {
+        font-size: 36px;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: bold;
+        color: $blue;
+    }
+
+    .service-price__list {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        .list__item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #ffffff;
+            font-size: 18px;
+            padding: 0 30px;
+            width: 100%;
+
+            &:nth-child(even) {
+                background: #F3F5FF;
+            }
+
+            .item__name {
+                width: 70%;
+            }
+
+            .item__old-price {
+                text-decoration: line-through;
+                color: $dark-gray;
+            }
+
+            .item__new-price {
+                color: $red;
+                font-size: 24px;
+                font-weight: bold;
+            }
+
+            .item__price {
+                font-size: 24px;
+                color: #000000;
+            }
+        }
+    }
+
+    .service-price__btn {
+        background: none;
+        margin-top: 30px;
+        color: $red;
+    }
+}

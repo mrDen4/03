@@ -326,3 +326,146 @@ a {
     background: #F8F8F8;
     color: #4953A4;
     border: none; }
+
+.services {
+  padding: 30px 0; }
+  .services .services__breadcrumbs {
+    display: flex;
+    align-items: center; }
+    .services .services__breadcrumbs .breadcrumbs__item {
+      margin-right: 10px;
+      font-size: 16px;
+      color: #6d6d6d; }
+      .services .services__breadcrumbs .breadcrumbs__item .item__link {
+        color: #000000; }
+  .services .services__title {
+    text-align: center;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #4953A4; }
+  .services .services__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .services .services__list .list__item {
+      display: flex;
+      width: 48%;
+      border: 1px solid #DBDBDB;
+      justify-content: space-between;
+      margin-bottom: 30px; }
+      .services .services__list .list__item .item__img {
+        width: 50%;
+        height: 100%; }
+        .services .services__list .list__item .item__img .img__img {
+          height: 100%;
+          width: 100%; }
+      .services .services__list .list__item .item__content {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        padding: 30px 25px; }
+        .services .services__list .list__item .item__content .content__title {
+          font-size: 20px;
+          font-weight: bold;
+          margin: 0; }
+        .services .services__list .list__item .item__content .content__text {
+          font-size: 14px;
+          margin: 20px 0; }
+        .services .services__list .list__item .item__content .content__btn {
+          background: none;
+          color: #EE2C37;
+          width: 90%; }
+          .services .services__list .list__item .item__content .content__btn .btn__img {
+            margin-left: 10px; }
+
+.service-hero {
+  height: 90vh;
+  background: url("../images/hero_bg.png") right center no-repeat;
+  background-size: contain; }
+  .service-hero .service-hero__container {
+    justify-content: center;
+    height: 100%; }
+  .service-hero .service-hero__text {
+    width: 45%; }
+    .service-hero .service-hero__text .text__text {
+      color: #000000;
+      font-size: 18px;
+      margin: 0;
+      margin-bottom: 30px; }
+    .service-hero .service-hero__text .text__title {
+      font-size: 36px;
+      line-height: 59px;
+      text-transform: uppercase;
+      margin: 0 0 30px 0;
+      color: #4953A4; }
+    .service-hero .service-hero__text .text__btns {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      .service-hero .service-hero__text .text__btns .btns__link {
+        background: none;
+        color: #EE2C37; }
+        .service-hero .service-hero__text .text__btns .btns__link .btn__img {
+          margin-left: 20px; }
+
+.service-price {
+  padding: 30px 0;
+  background: #F8F8F8; }
+  .service-price .service-price__container {
+    align-items: center;
+    justify-content: center; }
+  .service-price .service-price__title {
+    font-size: 36px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    color: #4953A4; }
+  .service-price .service-price__list {
+    display: flex;
+    flex-direction: column;
+    width: 100%; }
+    .service-price .service-price__list .list__item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #ffffff;
+      font-size: 18px;
+      padding: 0 30px;
+      width: 100%; }
+      .service-price .service-price__list .list__item:nth-child(even) {
+        background: #F3F5FF; }
+      .service-price .service-price__list .list__item .item__name {
+        width: 70%; }
+      .service-price .service-price__list .list__item .item__old-price {
+        text-decoration: line-through;
+        color: #DBDBDB; }
+      .service-price .service-price__list .list__item .item__new-price {
+        color: #EE2C37;
+        font-size: 24px;
+        font-weight: bold; }
+      .service-price .service-price__list .list__item .item__price {
+        font-size: 24px;
+        color: #000000; }
+  .service-price .service-price__btn {
+    background: none;
+    margin-top: 30px;
+    color: #EE2C37; }
+
+.service-about {
+  padding: 30px 0; }
+  .service-about .service-about__title {
+    color: #4953A4;
+    font-size: 36px;
+    text-transform: uppercase;
+    text-align: center; }
+  .service-about p {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 5px; }
+  .service-about .service-about__imgs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px; }
+    .service-about .service-about__imgs .imgs__img {
+      width: 30%; }

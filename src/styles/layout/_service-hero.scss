@@ -1,0 +1,43 @@
+.service-hero {
+    height: 90vh;
+    background: url('../images/hero_bg.png') right center no-repeat;
+    background-size: contain;
+
+    .service-hero__container {
+        justify-content: center;
+        height: 100%;
+    }
+    .service-hero__text {
+        width: 45%;
+
+        .text__text {
+            color: #000000;
+            font-size: 18px;
+            margin: 0;
+            margin-bottom: 30px;
+        }
+
+        .text__title {
+            font-size: 36px;
+            line-height: 59px;
+            text-transform: uppercase;
+            margin: 0 0 30px 0;
+            color: $blue;
+        }
+
+        .text__btns {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .btns__link {
+                background: none;
+                color: $red;
+
+                .btn__img {
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+}
