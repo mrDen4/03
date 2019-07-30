@@ -1,0 +1,34 @@
+.service-callback {
+    background: #F8F8F8;
+    color: $blue;
+    text-align: center;
+    padding: 50px 0;
+
+    .service-callback__title {
+        font-size: 36px;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    .service-callback__text {
+        font-size: 24px;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    .service-callback__links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 30px;
+
+        .item__link {
+            margin-right: 20px;
+        }
+
+        .link__img {
+            width: 45px;
+        }
+    }
+}

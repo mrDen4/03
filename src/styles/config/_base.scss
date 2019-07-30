@@ -60,3 +60,18 @@ a {
     opacity: .7;
   }
 }
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+
+  .breadcrumbs__item {
+      margin-right: 10px;
+      font-size: 16px;
+      color: #6d6d6d;
+
+      .item__link {
+          color: #000000;
+      }
+  }
+}

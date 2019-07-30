@@ -1,0 +1,95 @@
+.sales {
+    padding: 30px 0;
+    background: #F8F8F8;
+
+    .sales__title {
+        color: $blue;
+        font-size: 36px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .sales__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .list__item {
+            width: 48%;
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid $dark-gray;
+            background: #ffffff;
+
+            .item__img {
+                width: 55%;
+                position: relative;
+                overflow: hidden;
+
+                .img__date {
+                    position: absolute;
+                    bottom: 20px;
+                    left: 20px;
+                    background: $red;
+                    opacity: .8;
+                    color: #ffffff;
+                    font-size: 14px;
+                    font-weight: bold;
+                    padding: 15px 10px;
+                }
+
+                .img__sale {
+                    position: absolute;
+                    top: 20px;
+                    right: 0;
+                    background: $blue;
+                    opacity: .8;
+                    color: #ffffff;
+                    font-size: 14px;
+                    font-weight: bold;
+                    padding: 15px 10px;
+                }
+
+                .img__img {
+                    height: 100%;
+                }
+            }
+
+            .item__content {
+                width: 40%;
+                display: flex;
+                flex-direction: column;
+                padding: 20px;
+
+                .content__title {
+                    font-size: 18px;
+                    font-weight: bold;
+                    margin: 0;
+                    margin-bottom: 15px;
+                }
+
+                .content__old-price {
+                    font-size: 18px;
+                    color: #ABABAB;
+                    text-decoration: line-through;
+                    margin: 0;
+                }
+
+                .content__new-price {
+                    font-size: 30px;
+                    color: $red;
+                    margin: 10px 0 15px 0;
+                }
+
+                .content__btn {
+                    padding: 20px;
+                    width: 100%;
+
+                    .btn__arrow {
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
