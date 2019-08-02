@@ -42,7 +42,7 @@
                 overflow: hidden;
 
                 .img__img {
-                    height: 100%;
+                    width: 100%;
                 }
             }
 
@@ -50,7 +50,7 @@
                 width: 45%;
                 display: flex;
                 flex-direction: column;
-                // padding: 10px 25px;
+                padding: 10px 10px;
 
                 .content__title {
                     font-size: 20px;

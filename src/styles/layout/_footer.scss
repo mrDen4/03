@@ -30,4 +30,18 @@
         color: $blue;
         border: none;
     }
+
+    &--white {
+        background: $gray;
+        color: $blue;
+
+        .footer__btn {
+            background: $blue;
+            color: #ffffff;
+        }
+
+        .footer__mail {
+            color: $blue;
+        }
+    }
 }

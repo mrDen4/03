@@ -64,6 +64,9 @@ a {
 .breadcrumbs {
   display: flex;
   align-items: center;
+  margin-bottom: 30px;
+  width: 100%;
+  justify-content: flex-start;
 
   .breadcrumbs__item {
       margin-right: 10px;

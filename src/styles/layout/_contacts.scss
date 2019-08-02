@@ -23,7 +23,7 @@
         .info__left {
             display: flex;
             flex-direction: column;
-            margin-right: 30px;
+            margin-right: 50px;
 
             .left__item {
                 display: flex;
@@ -60,7 +60,6 @@
                 transition: .3s;
                 display: flex;
                 align-items: center;
-                margin-bottom: 30px;
 
                 &:hover {
                     color: $red;
