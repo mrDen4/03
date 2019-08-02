@@ -29,6 +29,10 @@
             padding: 0 30px;
             width: 100%;
 
+            &--hide {
+                display: none;
+            }
+
             &:nth-child(even) {
                 background: #F3F5FF;
             }
@@ -59,5 +63,9 @@
         background: none;
         margin-top: 30px;
         color: $red;
+
+        &--hide {
+            display: none;
+        }
     }
 }
