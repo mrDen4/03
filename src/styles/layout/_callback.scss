@@ -8,11 +8,19 @@
         text-transform: uppercase;
         text-align: center;
         margin: 0;
+
+        @include phones() {
+            font-size: 24px;
+        }
     }
 
     .callback__subtitle {
         font-size: 24px;
         text-align: center;
+
+        @include phones() {
+            font-size: 18px;
+        }
     }
 
     .callback__form {
@@ -27,6 +35,11 @@
             justify-content: center;
             align-items: center;
             border-bottom: 1px solid #ffffff;
+
+            @include phones() {
+                width: 100%;
+                margin-bottom: 20px;
+            }
 
             .form__inp {
                 background: none;

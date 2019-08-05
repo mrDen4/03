@@ -6,6 +6,10 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+
+        @include phones() {
+            flex-direction: column;
+        }
     }
 
     .license__bg {
@@ -17,6 +21,11 @@
         width: 50%;
         z-index: 5;
 
+        @include phones() {
+            width: 100%;
+            height: 100%;
+        }
+
         &--gray {
             background: $gray;
             height: 100%;
@@ -26,6 +35,10 @@
     .license__text {
         width: 35%;
         z-index: 10;
+
+        @include phones() {
+            width: 100%;
+        }
 
         .text__title {
             color: #ffffff;
@@ -61,6 +74,10 @@
         display: flex;
         flex-direction: column;
         z-index: 10;
+
+        @include phones() {
+            width: 100%;
+        }
 
         .slider__arrows {
             display: flex;

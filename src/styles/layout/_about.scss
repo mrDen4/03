@@ -12,6 +12,10 @@
         width: 45%;
         z-index: 10;
 
+        @include phones() {
+            display: none;
+        }
+
         .img__img {
             width: 100%;
         }
@@ -25,17 +29,29 @@
         width: 60%;
         height: 110%;
         z-index: 5;
+
+        @include phones() {
+            width: 100%;
+        }
     }
 
     .about__text {
         width: 45%;
         z-index: 10;
 
+        @include phones() {
+            width: 100%;
+        }
+
         .text__title {
             color: $blue;
             font-size: 36px;
             text-transform: uppercase;
             margin: 0 0 20px 0;
+
+            @include phones() {
+                font-size: 24px;
+            }
         }
 
         .text__text {

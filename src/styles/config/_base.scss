@@ -60,6 +60,12 @@ a {
   &:hover {
     opacity: .7;
   }
+
+  @include phones() {
+    width: 140px;
+    height: 40px;
+    font-size: 12px;
+  }
 }
 
 .breadcrumbs {

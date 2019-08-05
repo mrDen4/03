@@ -3,6 +3,10 @@
     padding: 10px 0;
     height: 10vh;
 
+    @include phones() {
+        height: initial;
+    }
+
     .header__container {
         flex-direction: row;
         justify-content: space-between;
@@ -22,6 +26,10 @@
         flex-direction: row;
         justify-content: space-between;
         width: 45%;
+
+        @include phones() {
+            display: none;
+        }
         
         .item__link {
             color: #ffffff;
@@ -42,6 +50,10 @@
         font-size: 24px;
         color: #ffffff;
         transition: .3s;
+
+        @include phones() {
+            display: none;
+        }
 
         &:hover {
             color: $red;
