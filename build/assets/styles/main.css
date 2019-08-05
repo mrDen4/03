@@ -48,7 +48,8 @@ a {
   color: #ffffff;
   text-transform: uppercase;
   transition: .3s;
-  cursor: pointer; }
+  cursor: pointer;
+  font-weight: bold; }
   .btn:hover {
     opacity: .7; }
 
@@ -156,7 +157,7 @@ a {
     right: 0;
     width: 60%;
     height: 110%;
-    z-index: 6; }
+    z-index: 5; }
   .about .about__text {
     width: 45%;
     z-index: 10; }
