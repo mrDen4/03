@@ -77,6 +77,7 @@
 
         @include phones() {
             width: 100%;
+            margin-top: 25px;
         }
 
         .slider__arrows {
@@ -85,6 +86,13 @@
             align-items: center;
             margin-bottom: 25px;
 
+            @include phones() {
+                order: 5;
+                justify-content: flex-start;
+                margin-bottom: 0;
+                margin-top: 25px;
+            }
+
             .arrows__arrow {
                 background: #ffffff;
                 border: 1px solid $blue;
@@ -92,6 +100,31 @@
                 height: inherit;
                 padding: 15px;
                 margin-right: 10px;
+
+                @include phones() {
+                    width: 30px;
+                    height: 30px;
+                    background: none;
+                    border: 1px solid #ffffff;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 0;
+                }
+
+                .arrow__img {
+                    @include phones() {
+                        display: none;
+                    }
+                }
+
+                .arrow__img--phone {
+                    display: none;
+
+                    @include phones() {
+                        display: flex;
+                    }
+                }
             }
         }
 

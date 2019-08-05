@@ -15,6 +15,28 @@
 
     .footer__copy {
         font-size: 16px;
+
+        @include phones() {
+            order: 5;
+            margin: 10px 0;
+        }
+    }
+
+    .footer__phone {
+        display: none;
+
+        .phone__icon {
+            margin-right: 10px;
+        }
+
+        @include phones() {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+            font-size: 16px;
+            margin: 10px 0;
+        }
     }
 
     .footer__mail {
@@ -23,6 +45,10 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
+        @include phones() {
+            margin: 10px 0;
+        }
 
         .mail__icon {
             margin-right: 10px;
@@ -33,6 +59,10 @@
         background: $gray;
         color: $blue;
         border: none;
+
+        @include phones() {
+            margin: 10px 0;
+        }
     }
 
     &--white {

@@ -10,7 +10,23 @@ $(document).ready(function () {
         arrows: true,
         slidesToScroll: 1,
         prevArrow: $('.license .license__slider .slider__arrows .arrows__arrow--left'),
-        nextArrow: $('.license .license__slider .slider__arrows .arrows__arrow--right')
+        nextArrow: $('.license .license__slider .slider__arrows .arrows__arrow--right'),
+        responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToScroll: 3,
+                slidesToShow: 3
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToScroll: 2,
+                slidesToShow: 2
+              }
+            }
+        ]
     });
 
     //Слайдер для отзывов на главной странице
@@ -24,7 +40,23 @@ $(document).ready(function () {
         arrows: true,
         slidesToScroll: 1,
         prevArrow: $('.reviews .license__slider .slider__arrows .arrows__arrow--left'),
-        nextArrow: $('.reviews .license__slider .slider__arrows .arrows__arrow--right')
+        nextArrow: $('.reviews .license__slider .slider__arrows .arrows__arrow--right'),
+        responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToScroll: 3,
+                slidesToShow: 3
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToScroll: 2,
+                slidesToShow: 2
+              }
+            }
+        ]
     });
 
     //Слайдер для страницы с акциями
