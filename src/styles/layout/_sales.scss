@@ -5,7 +5,7 @@
     .sales__top {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
 
         @include phones() {
             order: 5;
@@ -33,6 +33,10 @@
                 height: inherit;
                 padding: 15px;
                 margin-right: 10px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
             }
         }
     }

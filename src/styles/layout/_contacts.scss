@@ -20,10 +20,19 @@
         display: flex;
         font-size: 24px;
 
+        @include phones() {
+            flex-direction: column;
+            font-size: 16px;
+        }
+
         .info__left {
             display: flex;
             flex-direction: column;
             margin-right: 50px;
+
+            @include phones() {
+                margin-right: 0;
+            }
 
             .left__item {
                 display: flex;
@@ -34,6 +43,10 @@
 
                 &:last-child {
                     margin-bottom: 0;
+
+                    @include phones() {
+                        margin-bottom: 30px;
+                    }
                 }
 
                 &:hover {
@@ -73,6 +86,11 @@
             .right__btn {
                 background: none;
                 color: $red;
+
+                @include phones() {
+                    order: 3;
+                    margin-top: 30px;
+                }
             }
         }
     }
@@ -92,12 +110,21 @@
         color: $blue;
         font-size: 36px;
         text-transform: uppercase;
+
+        @include phones() {
+            font-size: 24px;
+        }
     }
 
     .contacts-faq__list {
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        @include phones() {
+            justify-content: center;
+            flex-direction: column;
+        }
 
         .list__item {
             width: 48%;
@@ -106,13 +133,29 @@
             border: 1px solid $dark-gray;
             background: #ffffff;
 
+            @include phones() {
+                width: 100%;
+                flex-direction: column;
+                margin-bottom: 30px;
+                height: 350px;
+            }
+
             .item__img {
                 width: 55%;
                 position: relative;
                 overflow: hidden;
 
+                @include phones() {
+                    width: 100%;
+                }
+
                 .img__img {
                     height: 100%;
+
+                    @include phones() {
+                        width: 100%;
+                        height: initial;
+                    }
                 }
             }
 
@@ -122,6 +165,10 @@
                 flex-direction: column;
                 justify-content: space-between;
                 padding: 20px;
+
+                @include phones() {
+                    width: 100%;    
+                }
 
                 .content__title {
                     font-size: 18px;

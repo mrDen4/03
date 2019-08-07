@@ -29,6 +29,10 @@
             padding: 0 30px;
             width: 100%;
 
+            @include phones() {
+                flex-wrap: wrap;
+            }
+
             &--hide {
                 display: none;
             }
@@ -39,6 +43,10 @@
 
             .item__name {
                 width: 70%;
+
+                @include phones() {
+                    width: 100%;
+                }
             }
 
             .item__old-price {
@@ -55,6 +63,11 @@
             .item__price {
                 font-size: 24px;
                 color: #000000;
+
+                @include phones() {
+                    width: 100%;
+                    text-align: right;
+                }
             }
         }
     }

@@ -3,12 +3,20 @@
     background: url('../images/hero_bg.png') right center no-repeat;
     background-size: contain;
 
+    @include phones() {
+        background: url('../images/hero_bg_phone.png') right center no-repeat;
+    }
+
     .service-hero__container {
         justify-content: center;
         height: 100%;
     }
     .service-hero__text {
         width: 45%;
+
+        @include phones() {
+            width: 100%;
+        }
 
         .text__text {
             color: #000000;
@@ -30,12 +38,34 @@
             align-items: center;
             justify-content: space-between;
 
+            @include phones() {
+                justify-content: flex-start;
+            }
+
             .btns__link {
                 background: none;
                 color: $red;
 
+                @include phones() {
+                    display: none;
+                }
+
                 .btn__img {
                     margin-left: 20px;
+                }
+
+                &--phone {
+                    display: none;
+
+                    @include phones() {
+                        display: flex;
+                        width: 40px;
+                        margin-left: 20px;
+
+                        .btn__img {
+                            margin-left: 0;
+                        }
+                    }
                 }
             }
         }

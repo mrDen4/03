@@ -2,6 +2,7 @@
     background: $blue;
     color: #ffffff;
     padding: 30px;
+    font-weight: bold;
 
     .footer__container {
         flex-direction: row;
@@ -36,6 +37,7 @@
             color: #ffffff;
             font-size: 16px;
             margin: 10px 0;
+            font-weight: bold;
         }
     }
 
@@ -45,6 +47,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        font-weight: bold;
 
         @include phones() {
             margin: 10px 0;

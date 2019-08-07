@@ -64,6 +64,9 @@ a {
   margin-bottom: 30px;
   width: 100%;
   justify-content: flex-start; }
+  @media screen and (max-width: 576px) {
+    .breadcrumbs {
+      justify-content: center; } }
   .breadcrumbs .breadcrumbs__item {
     margin-right: 10px;
     font-size: 16px;
@@ -475,6 +478,8 @@ a {
       background: none;
       color: #4953A4;
       border: 1px solid #4953A4; }
+      .faq .faq__text .text__btn .btn__img {
+        margin-left: 10px; }
 
 .callback {
   background: #4953A4;
@@ -530,7 +535,8 @@ a {
 .footer {
   background: #4953A4;
   color: #ffffff;
-  padding: 30px; }
+  padding: 30px;
+  font-weight: bold; }
   .footer .footer__container {
     flex-direction: row;
     justify-content: space-between;
@@ -555,13 +561,15 @@ a {
         justify-content: center;
         color: #ffffff;
         font-size: 16px;
-        margin: 10px 0; } }
+        margin: 10px 0;
+        font-weight: bold; } }
   .footer .footer__mail {
     font-size: 16px;
     color: #ffffff;
     display: flex;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    font-weight: bold; }
     @media screen and (max-width: 576px) {
       .footer .footer__mail {
         margin: 10px 0; } }
@@ -605,19 +613,32 @@ a {
       justify-content: space-between;
       margin-bottom: 30px;
       height: 200px; }
+      @media screen and (max-width: 576px) {
+        .services .services__list .list__item {
+          width: 100%;
+          flex-direction: column;
+          justify-content: flex-start;
+          height: 400px; } }
       .services .services__list .list__item--hide {
         display: none; }
       .services .services__list .list__item .item__img {
         width: 50%;
         height: 100%;
         overflow: hidden; }
+        @media screen and (max-width: 576px) {
+          .services .services__list .list__item .item__img {
+            width: 100%; } }
         .services .services__list .list__item .item__img .img__img {
           width: 100%; }
       .services .services__list .list__item .item__content {
         width: 45%;
         display: flex;
         flex-direction: column;
-        padding: 10px 10px; }
+        padding: 10px 10px;
+        align-items: center; }
+        @media screen and (max-width: 576px) {
+          .services .services__list .list__item .item__content {
+            width: 100%; } }
         .services .services__list .list__item .item__content .content__title {
           font-size: 20px;
           font-weight: bold;
@@ -628,7 +649,10 @@ a {
         .services .services__list .list__item .item__content .content__btn {
           background: none;
           color: #EE2C37;
-          width: 90%; }
+          width: 65%; }
+          @media screen and (max-width: 576px) {
+            .services .services__list .list__item .item__content .content__btn {
+              width: 60%; } }
           .services .services__list .list__item .item__content .content__btn .btn__img {
             margin-left: 10px; }
 
@@ -636,11 +660,17 @@ a {
   height: 90vh;
   background: url("../images/hero_bg.png") right center no-repeat;
   background-size: contain; }
+  @media screen and (max-width: 576px) {
+    .service-hero {
+      background: url("../images/hero_bg_phone.png") right center no-repeat; } }
   .service-hero .service-hero__container {
     justify-content: center;
     height: 100%; }
   .service-hero .service-hero__text {
     width: 45%; }
+    @media screen and (max-width: 576px) {
+      .service-hero .service-hero__text {
+        width: 100%; } }
     .service-hero .service-hero__text .text__text {
       color: #000000;
       font-size: 18px;
@@ -656,11 +686,26 @@ a {
       display: flex;
       align-items: center;
       justify-content: space-between; }
+      @media screen and (max-width: 576px) {
+        .service-hero .service-hero__text .text__btns {
+          justify-content: flex-start; } }
       .service-hero .service-hero__text .text__btns .btns__link {
         background: none;
         color: #EE2C37; }
+        @media screen and (max-width: 576px) {
+          .service-hero .service-hero__text .text__btns .btns__link {
+            display: none; } }
         .service-hero .service-hero__text .text__btns .btns__link .btn__img {
           margin-left: 20px; }
+        .service-hero .service-hero__text .text__btns .btns__link--phone {
+          display: none; }
+          @media screen and (max-width: 576px) {
+            .service-hero .service-hero__text .text__btns .btns__link--phone {
+              display: flex;
+              width: 40px;
+              margin-left: 20px; }
+              .service-hero .service-hero__text .text__btns .btns__link--phone .btn__img {
+                margin-left: 0; } }
 
 .service-price {
   padding: 30px 0;
@@ -686,12 +731,18 @@ a {
       font-size: 18px;
       padding: 0 30px;
       width: 100%; }
+      @media screen and (max-width: 576px) {
+        .service-price .service-price__list .list__item {
+          flex-wrap: wrap; } }
       .service-price .service-price__list .list__item--hide {
         display: none; }
       .service-price .service-price__list .list__item:nth-child(even) {
         background: #F3F5FF; }
       .service-price .service-price__list .list__item .item__name {
         width: 70%; }
+        @media screen and (max-width: 576px) {
+          .service-price .service-price__list .list__item .item__name {
+            width: 100%; } }
       .service-price .service-price__list .list__item .item__old-price {
         text-decoration: line-through;
         color: #DBDBDB; }
@@ -702,6 +753,10 @@ a {
       .service-price .service-price__list .list__item .item__price {
         font-size: 24px;
         color: #000000; }
+        @media screen and (max-width: 576px) {
+          .service-price .service-price__list .list__item .item__price {
+            width: 100%;
+            text-align: right; } }
   .service-price .service-price__btn {
     background: none;
     margin-top: 30px;
@@ -773,12 +828,21 @@ a {
       justify-content: center;
       border: 1px solid #DBDBDB;
       margin-right: 10px; }
+      @media screen and (max-width: 576px) {
+        .news .news__years .years__item {
+          justify-content: space-between; } }
+      .news .news__years .years__item:last-child {
+        margin-right: 0; }
       .news .news__years .years__item .item__link {
         color: #DBDBDB;
         width: 100%;
         height: 100%;
         padding: 15px;
         font-size: 18px; }
+        @media screen and (max-width: 576px) {
+          .news .news__years .years__item .item__link {
+            font-size: 14px;
+            padding: 5px; } }
       .news .news__years .years__item:hover {
         border: 1px solid #4953A4; }
         .news .news__years .years__item:hover .item__link {
@@ -799,6 +863,9 @@ a {
       background: #fff;
       margin-bottom: 30px;
       border: 1px solid #DBDBDB; }
+      @media screen and (max-width: 576px) {
+        .news .news__list .list__item {
+          width: 100%; } }
     .news .news__list .item__link {
       color: #000000; }
     .news .news__list .item__content {
@@ -848,7 +915,7 @@ a {
   .sales .sales__top {
     display: flex;
     align-items: center;
-    justify-content: space-between; }
+    justify-content: center; }
     @media screen and (max-width: 576px) {
       .sales .sales__top {
         order: 5;
@@ -871,6 +938,8 @@ a {
         height: inherit;
         padding: 15px;
         margin-right: 10px; }
+        .sales .sales__top .top__arrows .arrows__arrow:last-child {
+          margin-right: 0; }
   .sales .sales__list {
     display: flex;
     align-items: center;
@@ -993,10 +1062,17 @@ a {
   .contacts .contacts__info {
     display: flex;
     font-size: 24px; }
+    @media screen and (max-width: 576px) {
+      .contacts .contacts__info {
+        flex-direction: column;
+        font-size: 16px; } }
     .contacts .contacts__info .info__left {
       display: flex;
       flex-direction: column;
       margin-right: 50px; }
+      @media screen and (max-width: 576px) {
+        .contacts .contacts__info .info__left {
+          margin-right: 0; } }
       .contacts .contacts__info .info__left .left__item {
         display: flex;
         align-items: center;
@@ -1005,6 +1081,9 @@ a {
         margin-bottom: 30px; }
         .contacts .contacts__info .info__left .left__item:last-child {
           margin-bottom: 0; }
+          @media screen and (max-width: 576px) {
+            .contacts .contacts__info .info__left .left__item:last-child {
+              margin-bottom: 30px; } }
         .contacts .contacts__info .info__left .left__item:hover {
           color: #EE2C37; }
         .contacts .contacts__info .info__left .left__item .item__text {
@@ -1027,6 +1106,10 @@ a {
       .contacts .contacts__info .info__right .right__btn {
         background: none;
         color: #EE2C37; }
+        @media screen and (max-width: 576px) {
+          .contacts .contacts__info .info__right .right__btn {
+            order: 3;
+            margin-top: 30px; } }
   .contacts .contacts__map {
     width: 100%;
     background: #4953A4;
@@ -1039,28 +1122,51 @@ a {
     color: #4953A4;
     font-size: 36px;
     text-transform: uppercase; }
+    @media screen and (max-width: 576px) {
+      .contacts-faq .contacts-faq__title {
+        font-size: 24px; } }
   .contacts-faq .contacts-faq__list {
     display: flex;
     align-items: center;
     justify-content: space-between; }
+    @media screen and (max-width: 576px) {
+      .contacts-faq .contacts-faq__list {
+        justify-content: center;
+        flex-direction: column; } }
     .contacts-faq .contacts-faq__list .list__item {
       width: 48%;
       display: flex;
       justify-content: space-between;
       border: 1px solid #DBDBDB;
       background: #ffffff; }
+      @media screen and (max-width: 576px) {
+        .contacts-faq .contacts-faq__list .list__item {
+          width: 100%;
+          flex-direction: column;
+          margin-bottom: 30px;
+          height: 350px; } }
       .contacts-faq .contacts-faq__list .list__item .item__img {
         width: 55%;
         position: relative;
         overflow: hidden; }
+        @media screen and (max-width: 576px) {
+          .contacts-faq .contacts-faq__list .list__item .item__img {
+            width: 100%; } }
         .contacts-faq .contacts-faq__list .list__item .item__img .img__img {
           height: 100%; }
+          @media screen and (max-width: 576px) {
+            .contacts-faq .contacts-faq__list .list__item .item__img .img__img {
+              width: 100%;
+              height: initial; } }
       .contacts-faq .contacts-faq__list .list__item .item__content {
         width: 40%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         padding: 20px; }
+        @media screen and (max-width: 576px) {
+          .contacts-faq .contacts-faq__list .list__item .item__content {
+            width: 100%; } }
         .contacts-faq .contacts-faq__list .list__item .item__content .content__title {
           font-size: 18px;
           font-weight: bold;
@@ -1090,8 +1196,17 @@ a {
   align-items: center;
   justify-content: center;
   transition: .3s; }
+  @media screen and (max-width: 576px) {
+    .popup {
+      width: 100%;
+      margin-left: 0;
+      left: 0; } }
   .popup--active {
     top: 50%; }
+    @media screen and (max-width: 576px) {
+      .popup--active {
+        top: 70px;
+        margin-top: 0; } }
   .popup .popup__exit {
     position: absolute;
     top: 20px;
@@ -1107,12 +1222,18 @@ a {
     font-size: 36px;
     text-align: center;
     margin: 0 0 50px 0; }
+    @media screen and (max-width: 576px) {
+      .popup .popup__title {
+        font-size: 24px; } }
   .popup .popup__form {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     width: 60%; }
+    @media screen and (max-width: 576px) {
+      .popup .popup__form {
+        width: 80%; } }
     .popup .popup__form .form__row {
       display: flex;
       align-items: center;
