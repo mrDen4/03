@@ -7,6 +7,12 @@
         align-items: center;
         justify-content: space-between;
 
+        @include phones() {
+            order: 5;
+            margin-top: 20px;
+            justify-content: center;
+        }
+
         .sales__title {
             color: $blue;
             font-size: 36px;
@@ -44,10 +50,21 @@
             background: #ffffff;
             margin-right: 20px;
 
+            @include phones() {
+                flex-direction: column;
+                width: 100%;
+                margin-right: 0;
+            }
+
             .item__img {
                 width: 55%;
                 position: relative;
                 overflow: hidden;
+
+                @include phones() {
+                    width: 100%;
+                    height: 200px;
+                }
 
                 .img__date {
                     position: absolute;
@@ -59,6 +76,12 @@
                     font-size: 14px;
                     font-weight: bold;
                     padding: 15px 10px;
+
+                    @include phones() {
+                        padding: 7px 5px;
+                        bottom: 0;
+                        left: 0;
+                    }
                 }
 
                 .img__sale {
@@ -71,10 +94,20 @@
                     font-size: 14px;
                     font-weight: bold;
                     padding: 15px 10px;
+
+                    @include phones() {
+                        padding: 7px 5px;
+                        top: 0;
+                    }
                 }
 
                 .img__img {
                     height: 100%;
+
+                    @include phones() {
+                        width: 100%;
+                        height: initial;
+                    }
                 }
             }
 
@@ -84,11 +117,25 @@
                 flex-direction: column;
                 padding: 20px;
 
+                @include phones() {
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    align-items: center;
+                }
+
+                @include phones() {
+                    width: 100%;
+                }
+
                 .content__title {
                     font-size: 18px;
                     font-weight: bold;
                     margin: 0;
                     margin-bottom: 15px;
+
+                    @include phones() {
+                        width: 100%;
+                    }
                 }
 
                 .content__old-price {
@@ -96,17 +143,31 @@
                     color: #ABABAB;
                     text-decoration: line-through;
                     margin: 0;
+
+                    @include phones() {
+                        order: 3;
+                    }
                 }
 
                 .content__new-price {
                     font-size: 30px;
                     color: $red;
                     margin: 10px 0 15px 0;
+
+                    @include phones() {
+                        order: 2;
+                        margin-right: 20px;
+                    }
                 }
 
                 .content__btn {
                     padding: 20px;
                     width: 100%;
+
+                    @include phones() {
+                        order: 4;
+                        width: 60%;
+                    }
 
                     .btn__arrow {
                         margin-left: 10px;
