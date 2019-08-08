@@ -137,7 +137,9 @@ a {
       .header .header__hamburger {
         display: flex;
         align-items: center;
-        justify-content: center; } }
+        justify-content: center;
+        border: none;
+        background: none; } }
 
 .hero {
   height: 90vh;
