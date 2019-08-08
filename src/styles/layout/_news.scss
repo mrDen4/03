@@ -77,6 +77,10 @@
             margin-bottom: 30px;
             border: 1px solid $dark-gray;
 
+            @include tablets() {
+                width: 45%;
+            }
+
             @include phones() {
                 width: 100%;
             }

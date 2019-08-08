@@ -121,7 +121,7 @@
         align-items: center;
         justify-content: space-between;
 
-        @include phones() {
+        @include tablets() {
             justify-content: center;
             flex-direction: column;
         }
@@ -132,6 +132,11 @@
             justify-content: space-between;
             border: 1px solid $dark-gray;
             background: #ffffff;
+
+            @include tablets() {
+                width: 100%;
+                margin-bottom: 30px;
+            }
 
             @include phones() {
                 width: 100%;

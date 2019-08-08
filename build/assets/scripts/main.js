@@ -73,10 +73,10 @@ $(document).ready(function () {
     nextArrow: $('.sales .arrows__arrow--right'),
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 769,
         settings: {
           slidesToScroll: 1,
-          slidesToShow: 2
+          slidesToShow: 1
         }
       },
       {
@@ -115,5 +115,21 @@ $(document).ready(function () {
   $('.bg').on('click', function () {
     $('.bg').removeClass('bg--active');
     $('.popup').removeClass('popup--active');
+  });
+
+  //popup с меню на мобильной версии
+  $('.header .header__hamburger').on('click', function () {
+    $('.popup-menu').addClass('popup-menu--active');
+    $('.bg').addClass('bg--active');
+  });
+
+  $('.popup-menu .phone__exit').on('click', function () {
+    $('.bg').removeClass('bg--active');
+    $('.popup-menu').removeClass('popup-menu--active');
+  });
+
+  $('.bg').on('click', function () {
+    $('.bg').removeClass('bg--active');
+    $('.popup-menu').removeClass('popup-menu--active');
   });
 });

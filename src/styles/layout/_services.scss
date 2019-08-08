@@ -32,11 +32,15 @@
             margin-bottom: 30px;
             height: 200px;
 
-            @include phones() {
-                width: 100%;
+            @include tablets() {
+                width: 45%;
                 flex-direction: column;
                 justify-content: flex-start;
                 height: 400px;
+            }
+
+            @include phones() {
+                width: 100%;
             }
 
             &--hide {
@@ -48,12 +52,17 @@
                 height: 100%;
                 overflow: hidden;
 
-                @include phones() {
+                @include tablets() {
                     width: 100%;
                 }
 
                 .img__img {
                     width: 100%;
+
+                    @include phones() {
+                        width: 100%;
+                        height: initial;
+                    }
                 }
             }
 
@@ -64,7 +73,7 @@
                 padding: 10px 10px;
                 align-items: center;
 
-                @include phones() {
+                @include tablets() {
                     width: 100%;
                 }
 
@@ -84,7 +93,7 @@
                     color: $red;
                     width: 65%;
 
-                    @include phones() {
+                    @include tablets() {
                         width: 60%;
                     }
 

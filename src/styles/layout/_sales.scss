@@ -108,7 +108,7 @@
                 .img__img {
                     height: 100%;
 
-                    @include phones() {
+                    @include tablets() {
                         width: 100%;
                         height: initial;
                     }

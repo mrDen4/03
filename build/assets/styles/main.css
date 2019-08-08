@@ -87,6 +87,9 @@ a {
     align-items: center; }
   .header .header__logo {
     height: 50px; }
+    @media screen and (max-width: 768px) {
+      .header .header__logo {
+        height: 40px; } }
     .header .header__logo .logo__img {
       height: 100%; }
   .header .header__menu {
@@ -94,6 +97,9 @@ a {
     flex-direction: row;
     justify-content: space-between;
     width: 45%; }
+    @media screen and (max-width: 768px) {
+      .header .header__menu {
+        width: 50%; } }
     @media screen and (max-width: 576px) {
       .header .header__menu {
         display: none; } }
@@ -102,6 +108,9 @@ a {
       font-size: 18px;
       transition: .3s;
       text-transform: uppercase; }
+      @media screen and (max-width: 768px) {
+        .header .header__menu .item__link {
+          font-size: 14px; } }
       .header .header__menu .item__link:hover {
         color: #EE2C37; }
   .header .header__phone {
@@ -111,6 +120,9 @@ a {
     font-size: 24px;
     color: #ffffff;
     transition: .3s; }
+    @media screen and (max-width: 768px) {
+      .header .header__phone {
+        font-size: 16px; } }
     @media screen and (max-width: 576px) {
       .header .header__phone {
         display: none; } }
@@ -119,6 +131,13 @@ a {
     .header .header__phone .phone__icon {
       height: 20px;
       margin-right: 10px; }
+  .header .header__hamburger {
+    display: none; }
+    @media screen and (max-width: 576px) {
+      .header .header__hamburger {
+        display: flex;
+        align-items: center;
+        justify-content: center; } }
 
 .hero {
   height: 90vh;
@@ -132,6 +151,9 @@ a {
     height: 100%; }
   .hero .hero__text {
     width: 45%; }
+    @media screen and (max-width: 768px) {
+      .hero .hero__text {
+        width: 70%; } }
     @media screen and (max-width: 576px) {
       .hero .hero__text {
         width: 80%; } }
@@ -613,30 +635,37 @@ a {
       justify-content: space-between;
       margin-bottom: 30px;
       height: 200px; }
-      @media screen and (max-width: 576px) {
+      @media screen and (max-width: 768px) {
         .services .services__list .list__item {
-          width: 100%;
+          width: 45%;
           flex-direction: column;
           justify-content: flex-start;
           height: 400px; } }
+      @media screen and (max-width: 576px) {
+        .services .services__list .list__item {
+          width: 100%; } }
       .services .services__list .list__item--hide {
         display: none; }
       .services .services__list .list__item .item__img {
         width: 50%;
         height: 100%;
         overflow: hidden; }
-        @media screen and (max-width: 576px) {
+        @media screen and (max-width: 768px) {
           .services .services__list .list__item .item__img {
             width: 100%; } }
         .services .services__list .list__item .item__img .img__img {
           width: 100%; }
+          @media screen and (max-width: 576px) {
+            .services .services__list .list__item .item__img .img__img {
+              width: 100%;
+              height: initial; } }
       .services .services__list .list__item .item__content {
         width: 45%;
         display: flex;
         flex-direction: column;
         padding: 10px 10px;
         align-items: center; }
-        @media screen and (max-width: 576px) {
+        @media screen and (max-width: 768px) {
           .services .services__list .list__item .item__content {
             width: 100%; } }
         .services .services__list .list__item .item__content .content__title {
@@ -650,7 +679,7 @@ a {
           background: none;
           color: #EE2C37;
           width: 65%; }
-          @media screen and (max-width: 576px) {
+          @media screen and (max-width: 768px) {
             .services .services__list .list__item .item__content .content__btn {
               width: 60%; } }
           .services .services__list .list__item .item__content .content__btn .btn__img {
@@ -863,6 +892,9 @@ a {
       background: #fff;
       margin-bottom: 30px;
       border: 1px solid #DBDBDB; }
+      @media screen and (max-width: 768px) {
+        .news .news__list .list__item {
+          width: 45%; } }
       @media screen and (max-width: 576px) {
         .news .news__list .list__item {
           width: 100%; } }
@@ -995,7 +1027,7 @@ a {
               top: 0; } }
         .sales .sales__list .list__item .item__img .img__img {
           height: 100%; }
-          @media screen and (max-width: 576px) {
+          @media screen and (max-width: 768px) {
             .sales .sales__list .list__item .item__img .img__img {
               width: 100%;
               height: initial; } }
@@ -1129,7 +1161,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between; }
-    @media screen and (max-width: 576px) {
+    @media screen and (max-width: 768px) {
       .contacts-faq .contacts-faq__list {
         justify-content: center;
         flex-direction: column; } }
@@ -1139,6 +1171,10 @@ a {
       justify-content: space-between;
       border: 1px solid #DBDBDB;
       background: #ffffff; }
+      @media screen and (max-width: 768px) {
+        .contacts-faq .contacts-faq__list .list__item {
+          width: 100%;
+          margin-bottom: 30px; } }
       @media screen and (max-width: 576px) {
         .contacts-faq .contacts-faq__list .list__item {
           width: 100%;
@@ -1265,3 +1301,51 @@ a {
   .bg--active-popup {
     height: 100%;
     z-index: 100; }
+
+.popup-menu {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  top: -9999px;
+  transition: .3s;
+  z-index: 100; }
+  .popup-menu--active {
+    top: 60px; }
+  .popup-menu .popup-menu__phone {
+    background: #4953A4;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between; }
+    .popup-menu .popup-menu__phone .phone__link {
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: bold; }
+    .popup-menu .popup-menu__phone .link__icon {
+      margin-right: 10px; }
+  .popup-menu .popup-menu__menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: #ffffff;
+    padding: 20px; }
+    .popup-menu .popup-menu__menu .menu__item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      border: 1px solid #DBDBDB;
+      border-right: none;
+      border-left: none; }
+      .popup-menu .popup-menu__menu .menu__item .item__link {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #000000;
+        font-size: 14px;
+        text-transform: uppercase;
+        padding: 10px 0; }

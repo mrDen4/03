@@ -16,6 +16,10 @@
     .header__logo {
         height: 50px;
 
+        @include tablets() {
+            height: 40px;
+        }
+
         .logo__img {
             height: 100%;
         }
@@ -27,6 +31,10 @@
         justify-content: space-between;
         width: 45%;
 
+        @include tablets() {
+            width: 50%;
+        }
+
         @include phones() {
             display: none;
         }
@@ -36,6 +44,10 @@
             font-size: 18px;
             transition: .3s;
             text-transform: uppercase;
+
+            @include tablets() {
+                font-size: 14px;
+            }
 
             &:hover {
                 color: $red;
@@ -51,6 +63,10 @@
         color: #ffffff;
         transition: .3s;
 
+        @include tablets() {
+            font-size: 16px;
+        }
+
         @include phones() {
             display: none;
         }
@@ -63,5 +79,15 @@
            height: 20px;
            margin-right: 10px;
        } 
+    }
+
+    .header__hamburger {
+        display: none;
+
+        @include phones() {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
     }
 }
