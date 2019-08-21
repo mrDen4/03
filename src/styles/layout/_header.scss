@@ -2,6 +2,11 @@
     background: $blue;
     padding: 10px 0;
     height: 10vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    border-bottom: 1px solid #ffffff;
 
     @include phones() {
         height: initial;
@@ -11,13 +16,14 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        height: 100%;
     }
 
     .header__logo {
-        height: 50px;
+        height: 100%;
 
         @include tablets() {
-            height: 40px;
+            height: 30px;
         }
 
         .logo__img {
@@ -31,11 +37,11 @@
         justify-content: space-between;
         width: 45%;
 
-        @include tablets() {
-            width: 50%;
-        }
+        // @include tablets() {
+        //     width: 50%;
+        // }
 
-        @include phones() {
+        @include horizon() {
             display: none;
         }
         
@@ -67,7 +73,7 @@
             font-size: 16px;
         }
 
-        @include phones() {
+        @include horizon() {
             display: none;
         }
 
@@ -84,7 +90,7 @@
     .header__hamburger {
         display: none;
 
-        @include phones() {
+        @include horizon() {
             display: flex;
             align-items: center;
             justify-content: center;

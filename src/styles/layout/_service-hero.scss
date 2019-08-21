@@ -1,36 +1,75 @@
 .service-hero {
-    height: 90vh;
+    height: 100vh;
     background: url('../images/hero_bg.png') right center no-repeat;
     background-size: contain;
 
     @include phones() {
         background: url('../images/hero_bg_phone.png') right center no-repeat;
+        height: initial;
+        padding-bottom: 20px;
+        padding-top: 40px;
     }
 
     .service-hero__container {
         justify-content: center;
         height: 100%;
+        position: relative;
     }
+
+    .breadcrumbs {
+        position: absolute;
+        top: 30px;
+        width: 50%;
+        overflow: hidden;
+
+        @include phones() {
+            width: 80%;
+        }
+    }
+
     .service-hero__text {
         width: 45%;
 
         @include phones() {
-            width: 100%;
+            width: 90%;
+            margin-top: 75px;
         }
 
         .text__text {
-            color: #000000;
-            font-size: 18px;
+            text-transform: uppercase;
+            color: $red;
+            font-size: 30px;
+            font-weight: bold;
             margin: 0;
-            margin-bottom: 30px;
+
+            @include phones() {
+                font-size: 24px;
+            }
         }
 
         .text__title {
-            font-size: 36px;
+            font-size: 48px;
             line-height: 59px;
             text-transform: uppercase;
+            margin: 16px 0 25px 0;
+
+            @include phones() {
+                font-size: 24px;
+                line-height: 29px;
+                margin: 15px 0;
+            }
+        }
+
+        .text__price {
+            color: $red;
+            font-size: 30px;
             margin: 0 0 30px 0;
-            color: $blue;
+            font-weight: bold;
+            margin-left: 10px;
+
+            @include phones() {
+                font-size: 24px;
+            }
         }
 
         .text__btns {
@@ -60,7 +99,7 @@
                     @include phones() {
                         display: flex;
                         width: 40px;
-                        margin-left: 20px;
+                        margin-left: 10px;
 
                         .btn__img {
                             margin-left: 0;

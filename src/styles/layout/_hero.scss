@@ -1,10 +1,12 @@
 .hero {
-    height: 90vh;
+    height: 100vh;
     background: url('../images/hero_bg.png') right center no-repeat;
     background-size: contain;
+    padding-top: 100px;
 
     @include phones() {
         background: url('../images/hero_bg_phone.png') right center no-repeat;
+        height: 590px;
     }
 
     .hero__container {
@@ -25,12 +27,12 @@
         .text__text {
             text-transform: uppercase;
             color: $red;
-            font-size: 24px;
+            font-size: 30px;
             font-weight: bold;
             margin: 0;
 
             @include phones() {
-                font-size: 14px;
+                font-size: 24px;
             }
         }
 
@@ -50,9 +52,9 @@
         .text__price {
             color: $red;
             font-size: 30px;
-            text-transform: uppercase;
             margin: 0 0 30px 0;
             font-weight: bold;
+            margin-left: 10px;
 
             @include phones() {
                 font-size: 24px;
@@ -63,6 +65,10 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+
+            @include phones() {
+                justify-content: flex-start;
+            }
 
             .btns__link {
                 background: none;
@@ -82,6 +88,7 @@
                     @include phones() {
                         display: flex;
                         width: 40px;
+                        margin-left: 10px;
 
                         .btn__img {
                             margin-left: 0;

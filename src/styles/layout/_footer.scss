@@ -11,6 +11,7 @@
 
         @include phones() {
             flex-direction: column;
+            font-size: 18px;
         }
     }
 
@@ -20,6 +21,7 @@
         @include phones() {
             order: 5;
             margin: 10px 0;
+            font-size: 18px;
         }
     }
 
@@ -35,7 +37,7 @@
             align-items: center;
             justify-content: center;
             color: #ffffff;
-            font-size: 16px;
+            font-size: 18px;
             margin: 10px 0;
             font-weight: bold;
         }
@@ -51,6 +53,7 @@
 
         @include phones() {
             margin: 10px 0;
+            font-size: 18px;
         }
 
         .mail__icon {
@@ -78,6 +81,10 @@
         }
 
         .footer__mail {
+            color: $blue;
+        }
+
+        .footer__phone {
             color: $blue;
         }
     }

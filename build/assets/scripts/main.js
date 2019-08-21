@@ -6,11 +6,11 @@ $(document).ready(function () {
     speed: 300,
     slidesToShow: 3,
     adaptiveHeight: true,
-    autoplay: true,
+    autoplay: false,
     arrows: true,
     slidesToScroll: 1,
-    prevArrow: $('.license .license__slider .slider__arrows .arrows__arrow--left'),
-    nextArrow: $('.license .license__slider .slider__arrows .arrows__arrow--right'),
+    prevArrow: $('.license .license__slider .arrows__btn--left'),
+    nextArrow: $('.license .license__slider .arrows__btn--right'),
     responsive: [
       {
         breakpoint: 768,
@@ -36,11 +36,11 @@ $(document).ready(function () {
     speed: 300,
     slidesToShow: 3,
     adaptiveHeight: true,
-    autoplay: true,
+    autoplay: false,
     arrows: true,
     slidesToScroll: 1,
-    prevArrow: $('.reviews .license__slider .slider__arrows .arrows__arrow--left'),
-    nextArrow: $('.reviews .license__slider .slider__arrows .arrows__arrow--right'),
+    prevArrow: $('.reviews .license__slider .arrows__btn--left'),
+    nextArrow: $('.reviews .license__slider .arrows__btn--right'),
     responsive: [
       {
         breakpoint: 768,
@@ -59,24 +59,24 @@ $(document).ready(function () {
     ]
   });
 
-  //Слайдер для страницы с акциями
-  $('.sales .sales__list').slick({
+  //Слайдер для страницы с лицензиями и отзывами
+  $('.reviews-page .reviews__slider').slick({
     dots: false,
     infinite: true,
     speed: 300,
-    slidesToShow: 2,
+    slidesToShow: 4,
     adaptiveHeight: true,
-    autoplay: false,
+    autoplay: true,
     arrows: true,
     slidesToScroll: 1,
-    prevArrow: $('.sales .arrows__arrow--left'),
-    nextArrow: $('.sales .arrows__arrow--right'),
+    prevArrow: $('.reviews-page .arrows__btn--left'),
+    nextArrow: $('.reviews-page .arrows__btn--right'),
     responsive: [
       {
         breakpoint: 769,
         settings: {
           slidesToScroll: 1,
-          slidesToShow: 1
+          slidesToShow: 4
         }
       },
       {
@@ -88,6 +88,65 @@ $(document).ready(function () {
       }
     ]
   });
+
+    //Слайдер для страницы с услугой
+    $('.service-about .service-about__imgs').slick({
+      dots: false,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 3,
+      adaptiveHeight: true,
+      autoplay: true,
+      arrows: true,
+      slidesToScroll: 1,
+      prevArrow: $('.service-about .service__slider-wrap .arrows__btn--left'),
+      nextArrow: $('.service-about .service__slider-wrap .arrows__btn--right'),
+      responsive: [
+        {
+          breakpoint: 769,
+          settings: {
+            slidesToScroll: 1,
+            slidesToShow: 3
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToScroll: 1,
+            slidesToShow: 1
+          }
+        }
+      ]
+    });
+
+    //Слайдер для страницы с новостью
+    $('.new .new__imgs').slick({
+      dots: false,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 3,
+      adaptiveHeight: true,
+      autoplay: true,
+      slidesToScroll: 1,
+      prevArrow: $('.new .new__slider-wrap .arrows__btn--left'),
+      nextArrow: $('.new .new__slider-wrap .arrows__btn--right'),
+      responsive: [
+        {
+          breakpoint: 769,
+          settings: {
+            slidesToScroll: 1,
+            slidesToShow: 3
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToScroll: 1,
+            slidesToShow: 1
+          }
+        }
+      ]
+    });
 
   //Кнопка "показать еще" на странице с Услугой в блоке с прайсом
   $('.service-price .service-price__btn').on('click', function () {
@@ -101,13 +160,19 @@ $(document).ready(function () {
     $(this).addClass('services__btn--hide');
   });
 
+  //Кнопка "показать еще" на страницу с Акциями
+  $('.sales .sales__btn').on('click', function () {
+    $('.sales .sales__list .list__item--hide').removeClass('list__item--hide');
+    $(this).addClass('sales__btn--hide');
+  });
+
   //popup с обратным звонком
-  $('.hero .btns__btn').on('click', function () {
+  $('.hero .btns__btn, .service-hero .btns__btn, .contacts .contacts__info .info__right .right__btn').on('click', function () {
     $('.popup').addClass('popup--active');
     $('.bg').addClass('bg--active');
   });
 
-  $('.popup .popup__exit').on('click', function () {
+  $('.popup .popup__exit, .popup__form .form__btn').on('click', function () {
     $('.bg').removeClass('bg--active');
     $('.popup').removeClass('popup--active');
   });

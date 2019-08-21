@@ -6,6 +6,7 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
 
         @include phones() {
             flex-direction: column;
@@ -32,23 +33,31 @@
         }
     }
 
+    .text__title {
+        color: #ffffff;
+        font-size: 36px;
+        text-transform: uppercase;
+        margin: 0 0 30px 0;
+        width: 100%;
+        z-index: 10;
+
+        @include phones() {
+            font-size: 24px;
+        }
+
+        &--blue {
+            color: $blue;
+        }
+    }
+
     .license__text {
         width: 35%;
         z-index: 10;
 
         @include phones() {
             width: 100%;
-        }
-
-        .text__title {
-            color: #ffffff;
-            font-size: 36px;
-            text-transform: uppercase;
-            margin: 0 0 30px 0;
-
-            &--blue {
-                color: $blue;
-            }
+            order: 5;
+            margin-top: 30px;
         }
 
         .text__text {
@@ -63,9 +72,13 @@
 
         .text__btn {
             background: none;
-            border: 1px solid $blue;
-            color: $blue;
+            border: 1px solid #ffffff;
+            color: #ffffff;
             margin-top: 30px;
+
+            .btn__img {
+                margin-left: 10px;
+            }
         }
     }
 
@@ -74,57 +87,32 @@
         display: flex;
         flex-direction: column;
         z-index: 10;
+        position: relative;
 
         @include phones() {
             width: 100%;
-            margin-top: 25px;
         }
 
-        .slider__arrows {
+        .arrows__btn {
+            border: 1px solid #ffffff;
+            background: none;
+            position: absolute;
+            z-index: 10;
+            background: $blue;
+            width: 30px;
+            height: 30px;
             display: flex;
-            justify-content: flex-end;
             align-items: center;
-            margin-bottom: 25px;
+            justify-content: center;
+            top: 50%;
+            margin-top: -12.5px;
 
-            @include phones() {
-                order: 5;
-                justify-content: flex-start;
-                margin-bottom: 0;
-                margin-top: 25px;
+            &--left {
+                left: -10px;
             }
 
-            .arrows__arrow {
-                background: #ffffff;
-                border: 1px solid $blue;
-                width: inherit;
-                height: inherit;
-                padding: 15px;
-                margin-right: 10px;
-
-                @include phones() {
-                    width: 30px;
-                    height: 30px;
-                    background: none;
-                    border: 1px solid #ffffff;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    padding: 0;
-                }
-
-                .arrow__img {
-                    @include phones() {
-                        display: none;
-                    }
-                }
-
-                .arrow__img--phone {
-                    display: none;
-
-                    @include phones() {
-                        display: flex;
-                    }
-                }
+            &--right {
+                right: 10px;
             }
         }
 
