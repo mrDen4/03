@@ -1,10 +1,9 @@
 .service-hero {
     height: 100vh;
-    background: url('../images/hero_bg.png') right center no-repeat;
-    background-size: contain;
+    background-size: contain !important;
 
     @include phones() {
-        background: url('../images/hero_bg_phone.png') right center no-repeat;
+        background-size: cover !important;
         height: initial;
         padding-bottom: 20px;
         padding-top: 40px;
