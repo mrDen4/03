@@ -1253,7 +1253,7 @@ a {
           @media screen and (max-width: 576px) {
             .sales .sales__list .list__item .item__content .content__btn {
               order: 4;
-              width: 140px; } }
+              width: 160px; } }
           .sales .sales__list .list__item .item__content .content__btn .btn__arrow {
             margin-left: 10px; }
 
