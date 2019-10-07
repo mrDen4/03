@@ -1,13 +1,14 @@
 .footer {
     background: $blue;
     color: #ffffff;
-    padding: 30px;
+    padding: 30px 0;
     font-weight: bold;
 
     .footer__container {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
 
         @include phones() {
             flex-direction: column;
@@ -16,12 +17,20 @@
     }
 
     .footer__copy {
-        font-size: 16px;
+        font-size: 10px;
+        margin-top: 30px;
+        margin-bottom: 0;
+        color: gray;
+
+        .copy__link {
+            color: gray;
+            text-decoration: underline;
+        }
 
         @include phones() {
             order: 5;
             margin: 10px 0;
-            font-size: 18px;
+            font-size: 11px;
         }
     }
 
@@ -35,11 +44,66 @@
         @include phones() {
             display: flex;
             align-items: center;
-            justify-content: center;
             color: #ffffff;
             font-size: 18px;
-            margin: 10px 0;
+            margin: 0;
             font-weight: bold;
+        }
+    }
+
+    .footer__menu {
+        display: flex;
+
+        @include phones() {
+            flex-direction: column;
+        }
+
+        .menu__item {
+            margin-right: 20px;
+
+            @include phones() {
+                margin: 10px 0;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        .item__link {
+            color: #ffffff;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+
+            .link__icon {
+                height: 18px;
+                margin-right: 5px;
+            }
+        }
+    }
+
+    .footer__socials {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include phones() {
+            margin: 10px 0;
+        }
+
+        .socials__item {
+            margin-right: 20px;
+            height: 20px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        .link__img {
+            width: 20px;
+            height: 20px;
         }
     }
 
@@ -48,16 +112,15 @@
         color: #ffffff;
         display: flex;
         align-items: center;
-        justify-content: center;
         font-weight: bold;
 
         @include phones() {
-            margin: 10px 0;
+            margin: 0;
             font-size: 18px;
         }
 
         .mail__icon {
-            margin-right: 10px;
+            margin-right: 5px;
         }
     }
 
@@ -86,6 +149,21 @@
 
         .footer__phone {
             color: $blue;
+        }
+
+        .footer__menu {
+
+            .item__link {
+                color: $blue;
+            }
+        }
+
+        .footer__copy {
+            color: gray;
+
+            .copy__link {
+                color: gray;
+            }
         }
     }
 }

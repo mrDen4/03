@@ -15,6 +15,17 @@
         }
     }
 
+    .callback__text {
+        text-align: center;
+        color: gray;
+        margin-top: 20px;
+
+        .text__link {
+            color: gray;
+            text-decoration: underline;
+        }
+    }
+
     .callback__subtitle {
         font-size: 24px;
         text-align: center;
@@ -54,6 +65,7 @@
                 outline: none;
                 order: 3;
                 padding-left: 10px;
+                color: #ffffff;
 
                 &::-webkit-input-placeholder {
                     color: #ffffff;
