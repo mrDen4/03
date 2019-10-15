@@ -72,13 +72,13 @@
 
         .item__link {
             color: #ffffff;
-            font-size: 16px;
+            font-size: 18px;
             display: flex;
             align-items: center;
 
             .link__icon {
                 height: 18px;
-                margin-right: 5px;
+                margin-right: 10px;
             }
         }
     }
@@ -108,7 +108,7 @@
     }
 
     .footer__mail {
-        font-size: 16px;
+        font-size: 18px;
         color: #ffffff;
         display: flex;
         align-items: center;
@@ -120,7 +120,7 @@
         }
 
         .mail__icon {
-            margin-right: 5px;
+            margin-right: 10px;
         }
     }
 
