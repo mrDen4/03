@@ -128,6 +128,8 @@
         background: $gray;
         color: $blue;
         border: none;
+        height: 45px;
+        width: 175px;
 
         @include phones() {
             margin: 10px 0;

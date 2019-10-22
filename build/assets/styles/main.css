@@ -671,7 +671,9 @@ a {
   .footer .footer__btn {
     background: #F8F8F8;
     color: #4953A4;
-    border: none; }
+    border: none;
+    height: 45px;
+    width: 175px; }
     @media screen and (max-width: 576px) {
       .footer .footer__btn {
         margin: 10px 0; } }
@@ -1125,7 +1127,8 @@ a {
     color: #4953A4;
     font-size: 30px;
     text-transform: uppercase;
-    text-align: center; }
+    text-align: center;
+    margin-top: 0; }
     @media screen and (max-width: 576px) {
       .new .new__title {
         font-size: 24px; } }
