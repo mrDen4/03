@@ -184,17 +184,23 @@ $(document).ready(function () {
 
   //popup с меню на мобильной версии
   $('.header .header__hamburger').on('click', function () {
+    $('.header .header__hamburger').addClass('header__hamburger--active');
+    $('.header__exit-popup').addClass('header__exit-popup--active');
     $('.popup-menu').addClass('popup-menu--active');
     $('.bg').addClass('bg--active');
   });
 
-  $('.popup-menu .phone__exit').on('click', function () {
+  $('.header__exit-popup').on('click', function () {
     $('.bg').removeClass('bg--active');
     $('.popup-menu').removeClass('popup-menu--active');
+    $('.header__exit-popup').removeClass('header__exit-popup--active');
+    $('.header .header__hamburger').removeClass('header__hamburger--active');
   });
 
   $('.bg').on('click', function () {
     $('.bg').removeClass('bg--active');
     $('.popup-menu').removeClass('popup-menu--active');
+    $('.header__exit-popup').removeClass('header__exit-popup--active');
+    $('.header .header__hamburger').removeClass('header__hamburger--active');
   });
 });

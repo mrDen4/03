@@ -1,11 +1,11 @@
 .hero {
     height: 100vh;
-    background: url('../images/hero_bg.png') right center no-repeat;
+    background: url('../images/hero_bg.jpg') right center no-repeat;
     background-size: contain;
     padding-top: 100px;
 
     @include phones() {
-        background: url('../images/hero_bg_phone.png') right center no-repeat;
+        background: url('../images/hero_bg_phone.jpg') right center no-repeat;
         height: 590px;
     }
 

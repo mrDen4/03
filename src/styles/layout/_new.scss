@@ -4,7 +4,7 @@
 
     .new__title {
         color: $blue;
-        font-size: 30px;
+        font-size: 20px;
         text-transform: uppercase;
         text-align: center;
         margin-top: 0;
@@ -23,6 +23,7 @@
     ol {
         padding-left: 20px;
         font-size: 18px;
+        margin: 0;
     }
 
     .new__slider-wrap {
@@ -63,7 +64,6 @@
         margin-top: 20px;
 
         .imgs__image {
-            height: 220px;
             margin-right: 20px;
             overflow: hidden;
             display: flex;

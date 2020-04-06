@@ -73,10 +73,6 @@
             font-size: 16px;
         }
 
-        @include horizon() {
-            display: none;
-        }
-
         &:hover {
             color: $red;
         }
@@ -96,6 +92,36 @@
             justify-content: center;
             border: none;
             background: none;
+        }
+
+        &--active {
+            @include horizon() {
+                display: none;
+            }
+        }
+    }
+
+    .header__exit-popup {
+        display: none;
+
+        &--active {
+
+            @include horizon() {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: none;
+                background: none;
+                color: #fff;
+                font-size: 40px;
+                margin: 0;
+                padding: 0;
+                text-align: center;
+                cursor: pointer;
+                line-height: 30px;
+                width: 44px;
+                padding: 0 7px;
+            }
         }
     }
 }

@@ -18,7 +18,6 @@
     .callback__text {
         text-align: center;
         color: gray;
-        margin-top: 20px;
 
         .text__link {
             color: gray;
@@ -78,11 +77,30 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            margin-top: 30px;
+
+            @include phones() {
+                flex-direction: column;
+                margin-top: 15px;
+            }
         }
 
         .form__btn {
             border: 1px solid #ffffff;
             background: none;
+            margin-right: 30px;
+
+            @include phones() {
+                margin-left: 0;
+                margin-top: 15px;
+            }
+        }
+
+        .form__block-captcha {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             margin-top: 30px;
         }
     }
