@@ -291,6 +291,9 @@ a {
       .about .about__text .text__btn .btn__img {
         margin-left: 10px; }
 
+.error .about .about__container {
+  flex-direction: column; }
+
 .license {
   position: relative;
   padding: 30px 0; }
