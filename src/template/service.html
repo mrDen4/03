@@ -18,7 +18,7 @@
         <header class="header">
             <div class="container header__container">
                 <a href="./index.html" class="header__logo">
-                    <img src="./assets/images/logo.png" alt="moscow medical department" class="logo__img">
+                    <img src="assets/images/logo.jpg" alt="moscow medical department" class="logo__img">
                 </a>
                 <ul class="header__menu">
                     <li class="menu__item">
@@ -37,10 +37,14 @@
                         <a href="./contacts.html" class="item__link">Контакты</a>
                     </li>
                 </ul>
-                <a href="#" class="header__phone">
-                    <img src="./assets/images/phone.png" alt="телефон" class="phone__icon">
+                <a href="tel:+74957553503" class="header__phone">
+                    <img src="assets/images/new/phone.svg" alt="телефон" class="phone__icon">
                     8-495-755-35-03
                 </a>
+                <button class="header__hamburger">
+                    <img src="assets/images/new/hamburger.svg" alt="меню" class="hamburger__img">
+                </button>
+                <button class="header__exit-popup"> × </button>
             </div>
         </header>
         <section class="section service-hero" style="background: url('assets/images/services-bg/visov-scoroi-pomoshi.jpg') right top no-repeat;">
@@ -104,23 +108,26 @@
         </section>
         <section class="section callback">
             <div class="container callback__container">
-                <h2 class="callback__title">Мы становимся лучше с вашей помощью.</h2>
-                <h3 class="callback__subtitle">Оставьте отзыв или пожелание о работе нашей клиники.</h3>
-                <form action="" class="callback__form">
+                <h2 class="callback__title">ОСТАВЬТЕ ЗАЯВКУ И ПОЛУЧИТЕ ОПЕРАТИВНУЮ ПОМОЩЬ</h2>
+                <form method="post" class="callback__form ajax_form">
+
                     <div class="form__block">
-                        <input type="text" class="form__inp" placeholder="Ваше имя">
-                        <img src="./assets/images/form/name.png" alt="имя" class="form__img">
+                        <input type="text" class="form__inp" name="name" value="" placeholder="Имя">
+                        <img src="assets/images/new/form/name.svg" alt="имя" class="form__img">
                     </div>
                     <div class="form__block">
-                        <input type="text" class="form__inp" placeholder="Email">
-                        <img src="./assets/images/form/email.png" alt="имя" class="form__img">
+                        <input type="text" class="form__inp" name="phone" value="" placeholder="Телефон">
+                        <img src="assets/images/new/phone.svg" alt="телефон" class="form__img">
                     </div>
                     <div class="form__block">
-                        <input type="text" class="form__inp" placeholder="Текст сообщения">
-                        <img src="./assets/images/form/text.png" alt="имя" class="form__img">
+                        <input type="text" class="form__inp" name="email" value="" placeholder="E-mail">
+                        <img src="assets/images/new/form/email.svg" alt="e-mail" class="form__img">
                     </div>
                     <div class="form__block-btn">
                         <button class="btn form__btn">отправить</button>
+                        <p class="callback__text">Нажимая на кнопку отправить, <br> я даю согласие на <a
+                                href="assets/docs/soglasie-na-obrabotku-personalnih-dannih.pdf" target="_blank"
+                                class="text__link">обработку данных</a></p>
                     </div>
                 </form>
             </div>
@@ -174,22 +181,30 @@
                 </div>
             </div>
         </section>
-        <section class="section service-callback">
-            <div class="container service-callback__container">
-                <h2 class="service-callback__title">Остались вопросы?</h2>
-                <p class="service-callback__text">Пишите или звоните нам. Работаем круглосуточно. </p>
-                <ul class="service-callback__links">
-                    <li class="links__item">
-                        <a href="#" class="item__link">
-                            <img src="./assets/images/whatsapp.png" alt="" class="link__img">
-                        </a>
-                    </li>
-                    <li class="links__item">
-                        <a href="#" class="item__link">
-                            <img src="./assets/images/telegram.png" alt="" class="link__img">
-                        </a>
-                    </li>
-                </ul>
+        <section class="section callback">
+            <div class="container callback__container">
+                <h2 class="callback__title">ОСТАВЬТЕ ЗАЯВКУ И ПОЛУЧИТЕ ОПЕРАТИВНУЮ ПОМОЩЬ</h2>
+                <form method="post" class="callback__form ajax_form">
+
+                    <div class="form__block">
+                        <input type="text" class="form__inp" name="name" value="" placeholder="Имя">
+                        <img src="assets/images/new/form/name.svg" alt="имя" class="form__img">
+                    </div>
+                    <div class="form__block">
+                        <input type="text" class="form__inp" name="phone" value="" placeholder="Телефон">
+                        <img src="assets/images/new/phone.svg" alt="телефон" class="form__img">
+                    </div>
+                    <div class="form__block">
+                        <input type="text" class="form__inp" name="email" value="" placeholder="E-mail">
+                        <img src="assets/images/new/form/email.svg" alt="e-mail" class="form__img">
+                    </div>
+                    <div class="form__block-btn">
+                        <button class="btn form__btn">отправить</button>
+                        <p class="callback__text">Нажимая на кнопку отправить, <br> я даю согласие на <a
+                                href="assets/docs/soglasie-na-obrabotku-personalnih-dannih.pdf" target="_blank"
+                                class="text__link">обработку данных</a></p>
+                    </div>
+                </form>
             </div>
         </section>
         <footer class="footer">

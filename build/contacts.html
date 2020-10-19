@@ -18,7 +18,7 @@
         <header class="header">
             <div class="container header__container">
                 <a href="./index.html" class="header__logo">
-                    <img src="./assets/images/logo.png" alt="moscow medical department" class="logo__img">
+                    <img src="assets/images/logo.jpg" alt="moscow medical department" class="logo__img">
                 </a>
                 <ul class="header__menu">
                     <li class="menu__item">
@@ -37,17 +37,21 @@
                         <a href="./contacts.html" class="item__link">Контакты</a>
                     </li>
                 </ul>
-                <a href="#" class="header__phone">
-                    <img src="./assets/images/phone.png" alt="телефон" class="phone__icon">
+                <a href="tel:+74957553503" class="header__phone">
+                    <img src="assets/images/new/phone.svg" alt="телефон" class="phone__icon">
                     8-495-755-35-03
                 </a>
+                <button class="header__hamburger">
+                    <img src="assets/images/new/hamburger.svg" alt="меню" class="hamburger__img">
+                </button>
+                <button class="header__exit-popup"> × </button>
             </div>
         </header>
         <section class="section contacts">
             <div class="container contacts__container">
                 <ul class="breadcrumbs">
                     <li class="breadcrumbs__item">
-                        <a href="#" class="item__link">Главная</a>
+                        <a href="./index.html" class="item__link">Главная</a>
                     </li>
                     <li class="breadcrumbs__item">
                         /
@@ -56,125 +60,137 @@
                         Контакты
                     </li>
                 </ul>
+                <h1 class="title contacts__title">Телефон платной скорой помощи</h1>
                 <h2 class="contacts__subtitle">Moscow medical department</h2>
                 <div class="contacts__info">
                     <div class="info__left">
                         <div class="left__item">
-                            <img src="./assets/images/contacts/addres.png" alt="адрес" class="item__icon">
+                            <img src="./assets/images/new/contacts/addres.svg" alt="адрес" class="item__icon">
                             <p class="item__text">111123, г.Москва, Шоссе Энтузиастов, д.31, стр.27</p>
                         </div>
                         <div class="left__item">
-                            <img src="./assets/images/contacts/clock.png" alt="адрес" class="item__icon">
+                            <img src="./assets/images/new/contacts/clock.svg" alt="адрес" class="item__icon">
                             <p class="item__text">Будни с 10.00 до 18.00 (касса)</p>
                         </div>
-                        <a href="#" class="left__item">
-                            <img src="./assets/images/contacts/mail.png" alt="адрес" class="item__icon">
-                            med@03.com.ru
+                        <a href="mailto:mmd03@bk.ru" class="left__item">
+                            <img src="./assets/images/new/contacts/mail.svg" alt="адрес" class="item__icon">
+                            mmd03@bk.ru
                         </a>
                     </div>
                     <div class="info__right">
                         <button class="btn right__btn">Заказать звонок</button>
-                        <a href="#" class="right__link">
-                            <img src="./assets/images/contacts/phone.png" alt="телефон" class="link__img">
+                        <a href="tel:+74957553503" class="right__link">
+                            <img src="./assets/images/new/contacts/phone.svg" alt="телефон" class="link__img">
                             8-495-755-35-03
                         </a>
                     </div>
                 </div>
-                <div class="contacts__map"></div>
+                <div class="contacts__map">
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A87f25222739fce476e7f34f6e788336c7d776c76fddfc66c130d1cbb4896cfd2&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
+                </div>
             </div>
         </section>
         <section class="section callback">
             <div class="container callback__container">
-                <h2 class="callback__title">Мы становимся лучше с вашей помощью.</h2>
-                <form action="" class="callback__form">
+                <h2 class="callback__title">ОСТАВЬТЕ ЗАЯВКУ И ПОЛУЧИТЕ ОПЕРАТИВНУЮ ПОМОЩЬ</h2>
+                <form method="post" class="callback__form ajax_form">
+
                     <div class="form__block">
-                        <input type="text" class="form__inp" placeholder="Ваше имя">
-                        <img src="./assets/images/form/name.png" alt="имя" class="form__img">
+                        <input type="text" class="form__inp" name="name" value="" placeholder="Имя">
+                        <img src="assets/images/new/form/name.svg" alt="имя" class="form__img">
                     </div>
                     <div class="form__block">
-                        <input type="text" class="form__inp" placeholder="Email">
-                        <img src="./assets/images/form/email.png" alt="имя" class="form__img">
+                        <input type="text" class="form__inp" name="phone" value="" placeholder="Телефон">
+                        <img src="assets/images/new/phone.svg" alt="телефон" class="form__img">
                     </div>
                     <div class="form__block">
-                        <input type="text" class="form__inp" placeholder="Текст сообщения">
-                        <img src="./assets/images/form/text.png" alt="имя" class="form__img">
+                        <input type="text" class="form__inp" name="email" value="" placeholder="E-mail">
+                        <img src="assets/images/new/form/email.svg" alt="e-mail" class="form__img">
                     </div>
                     <div class="form__block-btn">
                         <button class="btn form__btn">отправить</button>
+                        <p class="callback__text">Нажимая на кнопку отправить, <br> я даю согласие на <a
+                                href="assets/docs/soglasie-na-obrabotku-personalnih-dannih.pdf" target="_blank"
+                                class="text__link">обработку данных</a></p>
                     </div>
                 </form>
             </div>
         </section>
-        <footer class="footer footer--white">
+        <footer class="footer">
             <div class="container footer__container">
                 <ul class="footer__menu">
                     <li class="menu__item">
-                        <a href="./new" class="item__link">
-                            <img src="assets/images/footerIcons/about-blue.svg" alt="О компании" class="link__icon">
+                        <a href="./about.html" class="item__link">
+                            <img src="./assets/images/footerIcons/about.svg" alt="О компании" class="link__icon">
                             О компании
                         </a>
                     </li>
                     <li class="menu__item">
-                        <a href="#" class="item__link">
-                            <img src="assets/images/footerIcons/license-blue.svg" alt="О компании" class="link__icon">
+                        <a href="./license.html" class="item__link">
+                            <img src="./assets/images/footerIcons/license.svg" alt="Лицензии" class="link__icon">
                             Лицензии
                         </a>
                     </li>
                     <li class="menu__item">
-                        <a href="#" class="item__link">
-                            <img src="assets/images/footerIcons/reviews-blue.svg" alt="О компании" class="link__icon">
+                        <a href="./reviews.html" class="item__link">
+                            <img src="./assets/images/footerIcons/reviews.svg" alt="Отзывы" class="link__icon">
                             Отзывы
                         </a>
                     </li>
                     <li class="menu__item">
-                        <a href="#" class="item__link">
-                            <img src="assets/images/footerIcons/faq-blue.svg" alt="О компании" class="link__icon">
+                        <a href="./services.html" class="item__link">
+                            <img src="./assets/images/footerIcons/faq.svg" alt="Полезно знать" class="link__icon">
                             Полезно знать
                         </a>
                     </li>
                     <li class="menu__item">
-                        <a href="#" class="footer__phone">
-                            <img src="assets/images/popup/phone.svg" alt="" class="phone__icon">
-                            +7(495)757-49-67
+                        <a href="mailto:mmd03@bk.ru" class="footer__mail">
+                            <img src="./assets/images/new/form/email.svg" alt="mail" class="mail__icon">
+                            mmd03@bk.ru
                         </a>
                     </li>
                     <li class="menu__item">
-                        <a href="#" class="footer__mail">
-                            <img src="assets/images/footerIcons/email-blue.svg" alt="mail" class="mail__icon">
-                            med@03.com.ru
+                        <a href="tel:+74957553503" class="footer__phone">
+                            <img src="./assets/images/new/phone.svg" alt="телефон" class="phone__icon">
+                            8-495-755-35-03
                         </a>
                     </li>
                 </ul>
                 <a href="#" class="btn footer__btn">оплатить онлайн</a>
                 <ul class="footer__socials">
                     <li class="socials__item">
-                        <a href="#"  class="item__link">
-                            <img src="assets/images/socials/inst-blue.svg" alt="Instagram" class="link__img">
+                        <a href="https://www.instagram.com/03.com.ru/" target="_blank" class="item__link">
+                            <img src="./assets/images/socials/inst.svg" alt="Instagram" class="link__img">
                         </a>
                     </li>
                     <li class="socials__item">
-                        <a href="#"  class="item__link">
-                            <img src="assets/images/socials/vk-blue.svg" alt="Vk" class="link__img">
+                        <a href="https://vk.com/mmd03" target="_blank" class="item__link">
+                            <img src="./assets/images/socials/vk.svg" alt="Vk" class="link__img">
                         </a>
                     </li>
                     <li class="socials__item">
-                        <a href="#"  class="item__link">
-                            <img src="assets/images/socials/fb-blue.svg" alt="Facebook" class="link__img">
+                        <a href="https://www.facebook.com/groups/491510441415947/?ref=bookmarks" target="_blank"
+                            class="item__link">
+                            <img src="./assets/images/socials/fb.svg" alt="Facebook" class="link__img">
                         </a>
                     </li>
                     <li class="socials__item">
-                        <a href="#"  class="item__link">
-                            <img src="assets/images/socials/od-blue.svg" alt="ok.ru" class="link__img">
+                        <a href="https://ok.ru/mmd03" target="_blank" class="item__link">
+                            <img src="./assets/images/socials/od.svg" alt="ok.ru" class="link__img">
                         </a>
                     </li>
                 </ul>
                 <div class="footer__bottom">
-                    <p class="footer__copy">© 2013-2019, <a href="#" class="copy__link">www.03.com.ru</a> Все права защищены. Любое использование
+                    <p class="footer__copy">© 2013-2020, <a href="./index.html" class="copy__link">www.03.com.ru</a> Все права
+                        защищены. Любое использование
                         материалов сайта допускается только по согласованию с руководством сайта, с обязательной
-                        гиперссылкой на сайт <a href="#" class="copy__link">www.03.com.ru.</a>
-                        <br>Незаконное использование преследуется по закону. Все рекомендации по лечению даются только при
-                        очной консультации специалистов. Оставаясь на сайте, вы даёте согласие на <a href="#"  class="copy__link">обработку
-                        персональных данных.</a></p>
+                        гиперссылкой на сайт <a href="./index.html" class="copy__link">www.03.com.ru.</a>
+                        <br>Незаконное использование преследуется по закону. Все рекомендации по лечению даются только
+                        при
+                        очной консультации специалистов. Оставаясь на сайте, вы даёте согласие на <a
+                            href="./assets/docs/soglasie-na-obrabotku-personalnih-dannih.pdf" target="_blank"
+                            class="copy__link">обработку
+                            персональных данных.</a></p>
                 </div>
             </div>
         </footer>

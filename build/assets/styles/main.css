@@ -291,6 +291,9 @@ a {
       .about .about__text .text__btn .btn__img {
         margin-left: 10px; }
 
+.error .about .about__container {
+  flex-direction: column; }
+
 .license {
   position: relative;
   padding: 30px 0; }
@@ -387,7 +390,7 @@ a {
 
 .reviews {
   position: relative;
-  padding: 30px 0; }
+  padding: 30px 0 60px 0; }
   .reviews .license__container {
     flex-direction: row;
     justify-content: space-between;
@@ -425,7 +428,8 @@ a {
       color: #4953A4; }
   .reviews .license__text {
     width: 35%;
-    z-index: 10; }
+    z-index: 10;
+    margin-top: 20px; }
     @media screen and (max-width: 576px) {
       .reviews .license__text {
         width: 100%;
@@ -882,6 +886,8 @@ a {
       @media screen and (max-width: 576px) {
         .service-hero .service-hero__text .text__price {
           font-size: 24px; } }
+    .service-hero .service-hero__text .text__currency {
+      display: none; }
     .service-hero .service-hero__text .text__btns {
       display: flex;
       align-items: center;
@@ -1562,7 +1568,8 @@ a {
     margin: 0 0 50px 0; }
     @media screen and (max-width: 576px) {
       .popup .popup__title {
-        font-size: 24px; } }
+        font-size: 24px;
+        margin-bottom: 20px; } }
   .popup .popup__form {
     display: flex;
     align-items: center;
@@ -1576,6 +1583,8 @@ a {
       display: flex;
       width: 100%;
       margin-bottom: 10px; }
+    .popup .popup__form .form-item {
+      margin-top: 20px; }
     .popup .popup__form .row__inp {
       width: 100%;
       border: none;
